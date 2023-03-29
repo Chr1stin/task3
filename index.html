@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9e4ebe9102.js" crossorigin="anonymous"></script><!--link to fontawesome script-->
     <link rel="stylesheet" href="css/poster.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <title>Task</title>
 </head>
 <body>
@@ -25,21 +26,19 @@
             </div>
 
            <div class="container"> 
-    <img src="images/equalizer-poster.jpg" alt="Equalizer poster" 
-    class="movie-poster">
-
+   
     <div id="myModal" class="modal">
 
         <div class="modal-content">
             <!-- Ristike &times -->
             <span class="closeBtn">&times;</span>
             <img  alt="modal-window poster" class="movie-poster-modal">
-            <h1>Equalizer (2014)</h1>
+            <h1> "Free Guy (2021)</h1>
 
         </div>
 
     </div>
-</div>
+ </div>
             <p class="movie-info-quote">
                 Life's too short to be a background character.
             </p>
@@ -56,7 +55,20 @@
                      <li><a href="#" class="rate-movie"><i class="fas fa-star-half-alt"></i></a></li>
                     </ul>
                  </div>
-           
+                 <div class="carousel">
+                    <div class="carousel__item carousel__item--visible">
+                        <img src="images/bd1.jpg" alt="">
+                    </div>
+                    <div class="carousel__item">
+                        <img src="images/bd2.jpg" alt="">
+    
+                    </div> <div class="carousel__item">
+                        <img src="images/bd3.jpg" alt="">
+                    </div>
+                    <div class="carousel__actions">
+                        <button id="carousel__button--prev"aria-label="Previouse slide"><</button>
+                        <button id="carousel__button--next"aria-label="Next slide">></button>
+                    </div>
 
                 
 
@@ -81,5 +93,6 @@
 
     </div>
     <script src="scripts/app.js"></script>
+    <script src="scripts/carousel.js"
 </body>
 </html>
